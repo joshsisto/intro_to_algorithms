@@ -1,3 +1,4 @@
+# https://runestone.academy/runestone/static/pythonds/index.html
 # https://interactivepython.org/runestone/static/pythonds/SortSearch/TheMergeSort.html?highlight=merge%20sort
 
 import time
@@ -18,7 +19,7 @@ def timeit(method: object) -> object:
 
 # @timeit
 def merge_sort(alist):
-    # print("Splitting ", alist)
+    print("Splitting ", alist)
     if len(alist) > 1:
         mid = len(alist) // 2
         lefthalf = alist[:mid]
@@ -48,5 +49,5 @@ def merge_sort(alist):
             alist[k] = righthalf[j]
             j = j + 1
             k = k + 1
-    # print("Merging ", alist)
+    print("Merging ", alist)
     return alist
